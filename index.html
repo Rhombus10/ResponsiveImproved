@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive</title>
+<link rel="stylesheet" type="text/css" href="responsiveSTYLE.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var onOff = 0;
+
+function MenuSide(){
+if (onOff == 0){
+	
+	document.getElementById("containerr").style.marginTop = "0px";
+	console.log(onOff);
+
+	onOff = 1;
+}else {
+	document.getElementById("containerr").style.marginTop = "-292px";
+	onOff = 0;
+	console.log(onOff);
+	
+	
+	
+}
+}
+ function resize(){
+ 	onOff = 0;
+ 	document.getElementById("containerr").style.marginTop = "-292px";
+ }
+
+</script>
+</head>
+<body onresize="resize()">
+<div id="menu">
+	<img src="menu symbol.png" onClick="MenuSide()">
+	<div id="container">
+
+<li>Hello</li>
+<li>Contact</li>
+<li>LulW</li>
+<li>Champ</li>
+
+</div>
+
+</div>
+<div id="containerr">
+<div id="sidemenu">
+	<a>Hello</a>
+	<a>Contact</a>
+	<a>LulW</a>
+	<a>Champ</a>
+</div>
+</div>
+</body>
+</html>
